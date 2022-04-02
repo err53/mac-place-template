@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         McMaster Logo template
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  try to take over the canvas!
 // @author       oralekin
 // @match        https://hot-potato.reddit.com/embed*
