@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         McMaster + Friendly Unis Logo template
 // @namespace    http://tampermonkey.net/
-// @version      0.3
+// @version      0.4
 // @description  try to take over the canvas!
 // @author       oralekin
 // @match        https://hot-potato.reddit.com/embed*
