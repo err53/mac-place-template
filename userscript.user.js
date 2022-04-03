@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         McMaster + Friendly Unis Logo template
 // @namespace    http://tampermonkey.net/
-// @version      0.3
+// @version      0.4
 // @description  try to take over the canvas!
 // @author       oralekin
 // @match        https://hot-potato.reddit.com/embed*
@@ -12,18 +12,27 @@
 
 if (window.top !== window.self) {
     window.addEventListener('load', () => {
-        document.getElementsByTagName("mona-lisa-embed")[0].shadowRoot.children[0].getElementsByTagName("mona-lisa-canvas")[0].shadowRoot.children[0].appendChild(
-            (function () {
-                const i = document.createElement("img");
-                i.src = "https://github.com/err53/mac-place-template/raw/main/dotted-place-template-mac.png";
-                i.onload = () => {
-                    if (i.width === i.height) {
-                        i.style = "position: absolute;left: 0;top: 0;image-rendering: pixelated;width: 1000px;height: 1000px;";
-                    } else {
-                        i.style = "position: absolute;left: 0;top: 0;image-rendering: pixelated;width: 2000px;height: 1000px;";
-                    }
-                };
-                return i;
-            })())
+        // Load the image
+        const image = document.createElement("img");
+        image.src = "https://github.com/err53/mac-place-template/raw/main/dotted-place-template-mac.png";
+        image.onload = () => {
+            image.style = `position: absolute; left: 0; top: 0; width: ${image.width/3}px; height: ${image.height/3}px; image-rendering: pixelated; z-index: 1`;
+        };
+      
+        // Add the image as overlay
+        const camera = document.querySelector("mona-lisa-embed").shadowRoot.querySelector("mona-lisa-camera");
+        const canvas = camera.querySelector("mona-lisa-canvas");
+        canvas.shadowRoot.querySelector('.container').appendChild(image);
+      
+        // Add a style to put a hole in the pixel preview (to see the current or desired color)
+        const waitForPreview = setInterval(() => {
+            const preview = camera.querySelector("mona-lisa-pixel-preview");
+            if (preview) {
+              clearInterval(waitForPreview);
+              const style = document.createElement('style')
+              style.innerHTML = '.pixel { clip-path: polygon(-20% -20%, -20% 120%, 37% 120%, 37% 37%, 62% 37%, 62% 62%, 37% 62%, 37% 120%, 120% 120%, 120% -20%); }'
+              preview.shadowRoot.appendChild(style);
+            }
+        }, 100);
     }, false);
 }
