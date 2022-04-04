@@ -1,5 +1,9 @@
 # mac-place-template
 
+## Template
+
+Want a nice template userscript to see where the flag should be? [Install the template userscript](https://github.com/err53/mac-place-template/raw/main/userscript.user.js)
+
 ## To use autoplacer (copied from [here](https://github.com/ca-place/ca-place-script/blob/main/README.md))
 
 A script for defending the uni templates onto r/place
@@ -29,7 +33,3 @@ Make sure the extention is _only enabled for reddit._ You can do this by clickin
 Use this extension carefully, you should not enable Cross Origin Requests for any other webpages. Try use it in incognito / do not browse other sites than Reddit!
 
 If you are getting error msg like Error in retrieving folder, that means Cross Origin Requests are not working and your CORS extensions are not set up properly.
-
-## Template
-
-Want a nice template userscript to see where the flag should be? [Install the template userscript](https://github.com/err53/mac-place-template/raw/main/userscript.user.js)
