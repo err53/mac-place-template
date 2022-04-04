@@ -21,7 +21,7 @@ var accessToken
 var currentOrderCanvas = document.createElement('canvas')
 var currentOrderCtx = currentOrderCanvas.getContext('2d')
 var currentPlaceCanvas = document.createElement('canvas')
-var cnc_url = 'https://raw.githubusercontent.com/err53/mac-place-template/main/autoplace_tempate.png'
+var cnc_url = 'https://raw.githubusercontent.com/err53/mac-place-template/main/autoplace_template.png'
 
 // Global constants
 const DEFAULT_TOAST_DURATION_MS = 10000
