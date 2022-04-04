@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         McMaster + Friendly Unis Logo template
+// @name         WLU Logo template
 // @namespace    http://tampermonkey.net/
 // @version      0.4
 // @description  try to take over the canvas!
