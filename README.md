@@ -1,5 +1,9 @@
 # mac-place-template
 
+First, install the [TamperMonkey](https://www.tampermonkey.net/) browser extension:
+- [Chrome Webstore](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en)
+ - [FireFox](https://addons.mozilla.org/en-US/firefox/addon/violentmonkey/) (ViolentMonkey)
+
 ## Template
 
 Want a nice template userscript to see where the flag should be? [Install the template userscript](https://github.com/err53/mac-place-template/raw/main/userscript.user.js)
@@ -9,11 +13,9 @@ Want a nice template userscript to see where the flag should be? [Install the te
 A script for defending the uni templates onto r/place
 This script will automate your tile placements to defend the grey outline and surrounding tiles based on this [template](https://raw.githubusercontent.com/err53/mac-place-template/main/canada_uni_full_size.png)
 
-First, install the [TamperMonkey](https://www.tampermonkey.net/) browser extension:
-- [Chrome Webstore](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en)
- - [FireFox](https://addons.mozilla.org/en-US/firefox/addon/violentmonkey/) (ViolentMonkey)
+Install a maintenance script that covers original crests, waterloo banner, Queen's Q, and western crest **[here](https://github.com/err53/mac-place-template/raw/main/maintain.user.js)**
 
-Install this tamper monkey script **[here](https://github.com/err53/mac-place-template/raw/main/autoplacer.user.js)**
+Install a bot that tries to paint everything in the template **[here](https://github.com/err53/mac-place-template/raw/main/autoplacer.user.js)**
 
 The code is open source! Inspect it for yourself!
 
