@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         McMaster + Friendly Unis Logo template
 // @namespace    http://tampermonkey.net/
-// @version      2023.1
+// @version      2023.2.0
 // @description  try to take over the canvas!
 // @author       oralekin and xpert104
-// @match        https://hot-potato.reddit.com/embed*
+// @match        https://garlic-bread.reddit.com/embed*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=reddit.com
 // @updateURL    https://github.com/err53/mac-place-template/blob/main/2023/userscript.user.js
 // @downloadURL  https://github.com/err53/mac-place-template/blob/main/2023/userscript.user.js
