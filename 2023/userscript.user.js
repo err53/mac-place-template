@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         McMaster + Friendly Unis Logo template
 // @namespace    http://tampermonkey.net/
-// @version      2023.2.0
+// @version      2023.2.1
 // @description  try to take over the canvas!
 // @author       oralekin and xpert104
 // @match        https://garlic-bread.reddit.com/embed*
@@ -16,7 +16,8 @@ if (window.top !== window.self) {
     window.addEventListener('load', () => {
         // Load the image
         const image = document.createElement("img");
-        image.src = "https://raw.githubusercontent.com/err53/mac-place-template/main/2023/dotted-place-template-mac.png";
+        // The `?token=$(date +%s)` is added to url to update image in overlay faster
+        image.src = "https://raw.githubusercontent.com/err53/mac-place-template/main/2023/dotted-place-template-mac.png?token=$(date +%s)";
         image.onload = () => {
             image.style = `position: absolute; left: 0; top: 0; width: ${image.width/3}px; height: ${image.height/3}px; image-rendering: pixelated; z-index: 1`;
         };
